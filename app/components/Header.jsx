@@ -8,12 +8,10 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 class Header extends Component{
     render() {
         return(
-          <ScrollableAnchor id={'professional-audit'}>
             <header className="header">
-                <NavBar/>
+                {/*<NavBar/>*/}
                 <HeaderContent/>
             </header>
-          </ScrollableAnchor>
         )
     }
 }

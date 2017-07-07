@@ -14,10 +14,8 @@ module.exports = {
         outputPath: path.join(__dirname, 'build')
     },
     entry: {
-        sales_generator_lp: path.resolve(root, 'sales.generator.lp.jsx'),
-        style: path.resolve(root, 'assets/sass/style.scss'),
-        slick: path.resolve(root, 'assets/common/slick.min.css'),
-        slicktheme: path.resolve(root, 'assets/common/slick-theme.min.css')
+        sales_generator_lp: path.resolve(root, 'happy.witch.lp.jsx'),
+        style: path.resolve(root, 'assets/sass/style.scss')
     },
     output:{
         path: __dirname + '/build',

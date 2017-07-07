@@ -39,23 +39,28 @@ class HeaderContent extends Component{
 
     render() {
         return(
-            <section className="header-content-background">
-                <div className="content--background">
-                    <div className="container header__content">
-                        <h2 className="header__content-title">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТА В <span>ТОП-3</span> ЯНДЕКСА И GOOGLE</h2>
-                        <h3 className="header__content-subtitle">Гарантированно приведем на Ваш сайт тысячи новых клиентов</h3>
-                        <p className="header__content-text">Финансовая гарантия результата. Рост продаж. Продвижение только по целевым запросам.</p>
-                        <p className="header__content-text">Снижение стоимости привлечения клиента. Расчет окупаемости.</p>
-                        <h5 className="know-form__title">Узнайте, сколько новых клиентов Вы можете получить с сайта!</h5>
-                        {this.clientsNotification()}
-                        <form className="form-group know-form" onSubmit={this.btnSubmitHandler.bind(this)}>
-                            <MaskedInput mask="+7(111) 111 11 11" type="text" ref="phone" className="form-control" placeholder="Телефон *"  required/>
-                            <input type="submit" className="btn submit-btn"  value="Узнать сколько получу клиентов"/>
-                        </form>
-                    </div>
-                </div>
-                <div className="separatorbottom">
-                    <svg version="1.1" id="bottom-triangle" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M 0 100 H 100 V 0 H 58.5 L 50 100 L 41.5 0 H 0 Z"></path></svg>
+            <section className="container-personal-card">
+                <div className="container-personal-card__opacity">
+                    <h1>
+                        Персональная натальная карта <span id="pink-time">за 24 часа</span>
+                    </h1>
+                    <h2>
+                        Позволяет сделать детальный анализ своей жизни по 11 показателям
+                    </h2>
+                    <p>
+                        Получите рекомендации, которые помогут добиться максимально возможного роста во всех сферах жизни!
+                    </p>
+                    <form className="personal-card">
+                        <div className="personal-card__item">
+                            <input className="personal-card__input" type="text" placeholder="Имя *"/>
+                        </div>
+                        <div className="personal-card__item">
+                            <input className="personal-card__input" type="text" placeholder="Телефон *"/>
+                        </div>
+                        <div className="personal-card__item">
+                            <input className="personal-card__input personal-card__btn-submit" type="submit" value="Получить рекомендации!"/>
+                        </div>
+                    </form>
                 </div>
             </section>
         );
@@ -64,7 +69,7 @@ class HeaderContent extends Component{
 
 const mapStateToProps = (store) => {
     return {
-        formState: store.salesReducer
+        formState: store.hwReducer
     }
 };
 

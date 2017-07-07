@@ -180,7 +180,7 @@ class ModalForm extends Component{
 
 const mapStateToProps = (store) => {
     return {
-        formState: store.salesReducer
+        formState: store.hwReducer
     }
 };
 

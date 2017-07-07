@@ -5,14 +5,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import middleWare from 'redux-thunk';
 import reducers from './reducers';
-import App from './components/HappyWitchLP';
+import HappyWitchLP from './components/HappyWitchLP.jsx';
 
 const store = createStore(reducers, {}, applyMiddleware(middleWare));
 
 render(
     <Provider store={store}>
         <Router>
-            <Route path='/' component={App}/>
+            <Route path='/' component={HappyWitchLP}/>
         </Router>
 
     </Provider>, document.getElementById('app')

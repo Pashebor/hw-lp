@@ -1,2 +1,36 @@
-@import './bootstrap';
+@import "fonts";
+@import "personal-card";
+@import "reset.scss";
+@import "../../components/main/need-analysis/need-analysis.scss";
+@import "../../components/main/key-to-success/key-to-success.scss";
+@import "../../components/main/worry/worry.scss";
+@import "adaptive.scss";
 
+.top-button-block {
+  position: fixed;
+  bottom: 140px;
+  z-index: 9999;
+  right: 4%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  .top-button {
+    width: 70px;
+    height: 70px;
+    background-color: #3e35bd;
+    color: #ef6ea8;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+    &::before {
+      font-family: FontAwesome;
+      font-size: 60px;
+      content: '\f106';
+    }
+  }
+}

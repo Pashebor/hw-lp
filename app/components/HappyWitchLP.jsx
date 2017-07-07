@@ -3,7 +3,7 @@ import Header from './Header.jsx';
 import Main from './main/Main.jsx';
 import Footer from './Footer.jsx';
 import ModalForm from './ModalForm';
-import  { configureAnchors} from 'react-scrollable-anchor';
+import  { configureAnchors } from 'react-scrollable-anchor';
 
 class HappyWitchLP extends React.Component{
    constructor() {
@@ -12,11 +12,11 @@ class HappyWitchLP extends React.Component{
    }
     render() {
        return(
-           <div>
-               <ModalForm/>
+           <div className="container">
+               {/*<ModalForm/>*/}
                <Header/>
                <Main/>
-               <Footer/>
+              {/* <Footer/>*/}
            </div>
        )
    }

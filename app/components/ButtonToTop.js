@@ -39,7 +39,7 @@ class ButtonToTop extends React.Component{
 
 const mapStateToProps = (store) => {
     return {
-        styles: store.salesReducer.styles
+        styles: store.hwReducer.styles
     }
 };
 

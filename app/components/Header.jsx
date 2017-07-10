@@ -8,7 +8,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 class Header extends Component{
     render() {
         return(
-            <header className="header">
+            <header>
                 {/*<NavBar/>*/}
                 <HeaderContent/>
             </header>

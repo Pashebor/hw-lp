@@ -1,3 +1,4 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "fonts";
 @import "personal-card";
 @import "reset.scss";
@@ -5,6 +6,10 @@
 @import "../../components/main/key-to-success/key-to-success.scss";
 @import "../../components/main/worry/worry.scss";
 @import "adaptive.scss";
+@import "../../components/main/astro-training/training";
+@import "../../components/main/working-scheme/scheme";
+@import "../../components/main/product-cost/cost";
+@import "./modal-form";
 
 .top-button-block {
   position: fixed;
@@ -32,5 +37,47 @@
       font-size: 60px;
       content: '\f106';
     }
+  }
+}
+
+.form{
+  &__notification{
+    font-family: OpenSansRegular;
+    color: #ef6ea8;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+    &--error{
+      color: red;
+    }
+  }
+}
+
+#app .personal-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  .form-control{
+    height: 18px;
+    width: 18px;
+  }
+  p{
+    font-size: 16px;
+    padding: 0;
+    display: block;
+    line-height: 27px;
+    margin-left: 4px;
+  }
+}
+/********************/
+
+#app .confidential-link {
+  color: #60b57e;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+  font-weight: 600;
+  &:hover{
+    color: white;
   }
 }

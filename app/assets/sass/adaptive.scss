@@ -1,5 +1,7 @@
 .container {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .key-item {
@@ -31,7 +33,7 @@
     margin-left: -20px;
   }
   .container-personal-card {
-    height: 280px;
+    height: 340px;
   }
   .key-item__container p {
     font-size: 18px;
@@ -68,6 +70,101 @@
   }
   .wrap {
     width: 690px;
+  }
+  .training-list ul li {
+    font-size: 20px!important;
+  }
+  .container-scheme {
+    width: 100%!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    padding-bottom: 20px!important;
+  }
+  .container-scheme h2 {
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+  }
+  .container-scheme p {
+    font-size: 20px!important;
+  }
+  .scheme__field input[type="submit"] {
+    font-size: 14px!important;
+  }
+  .scheme__field input[type="text"] {
+    padding: 10px 10px!important;
+  }
+  .scheme-paragraph {
+    margin-bottom: 10px!important;
+  }
+  .scheme__field input[type="text"] {
+    width: 158px!important;
+  }
+  .scheme-arrow img {
+    margin-top: 20px!important;
+    margin-bottom: 10px!important;
+  }
+  #title-pictures {
+    margin-bottom: 5px!important;
+  }
+  .scheme-pictures__item img {
+    width: 95%!important;
+  }
+  .container-cost__opacity {
+    padding-top: 20px!important;
+  }
+  .container-cost h2 {
+    margin-bottom: 0!important;
+  }
+  .cost__title {
+    font-size: 16px!important;
+    margin-bottom: 10px!important;
+  }
+  .cost__text {
+    font-size: 14px!important;
+  }
+  .cost__list {
+    font-size: 14px!important;
+  }
+  .cost__trait {
+    font-size: 24px!important;
+  }
+  .cost__now {
+    font-size: 16px!important;
+  }
+  .cost__btn input {
+    font-size: 14px!important;
+  }
+  .cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 6%!important;
+    padding-right: 6% !important;
+  }
+  .header {
+    width: 98%;
+  }
+  .header__logo-image img {
+    width: 60px;
+    height: 60px;
+  }
+  .header__logo-text {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .header__contacts-number {
+    font-size: 12px;
+    padding-top: 23px;
+    padding-right: 10px;
+  }
+  .header__contacts-btn input {
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 14px;
   }
 }
 
@@ -111,7 +208,7 @@
     padding-bottom: 4px;
   }
   .container-personal-card {
-    height: 290px;
+    height: 350px;
   }
   .key-item__container p {
     font-size: 12px;
@@ -186,5 +283,111 @@
   }
   .container-worry {
     width: 300px;
+  }
+  .training-list ul li {
+    font-size: 12px!important;
+    padding-left: 0px!important;
+    margin-right: 20px!important;
+  }
+  .container-scheme {
+    width: 100%!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+  .container-scheme h2 {
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+  }
+  .container-scheme p {
+    font-size: 12px!important;
+    font-weight: 600!important;
+    letter-spacing: 0!important;
+  }
+  .scheme__field input[type="submit"] {
+    font-size: 10px!important;
+    margin-top: 10px!important;
+    width: 70%!important;
+  }
+  .scheme__field input[type="text"] {
+    padding: 8px 8px!important;
+    width: 65%!important;
+    margin-right: 0!important;
+  }
+  .scheme-arrow img {
+    width: 38px!important;
+    margin-top: 20px!important;
+    margin-bottom: 10px!important;
+  }
+  .scheme-paragraph {
+    margin-bottom: 10px!important;
+  }
+  .scheme-form {
+    flex-direction: column!important;
+  }
+  .scheme-pictures {
+    flex-direction: column!important;
+  }
+  .scheme-pictures__item {
+    width: 100%!important;
+  }
+  .scheme-pictures__item img {
+    width: 100%!important;
+  }
+  .container-cost__opacity {
+    padding-top: 20px!important;
+  }
+  .container-cost h2 {
+    margin-bottom: 0!important;
+  }
+  .cost {
+    flex-direction: column!important;
+  }
+  .cost__item {
+    width: 100%!important;
+  }
+  .cost__title {
+    font-size: 14px!important;
+    margin-bottom: 10px!important;
+  }
+  .cost__text {
+    font-size: 12px!important;
+  }
+  .cost__list {
+    font-size: 12px!important;
+  }
+  .cost__trait {
+    font-size: 20px!important;
+    padding-top: 0!important;
+  }
+  .cost__now {
+    font-size: 14px!important;
+  }
+  .cost__btn input {
+    font-size: 10px!important;
+  }
+  .header {
+    width: 98%;
+  }
+  .header__logo-image img {
+    width: 50px;
+    height: 50px;
+  }
+  .header__logo-text {
+    font-size: 12px;
+    padding-top: 17px;
+    padding-left: 10px;
+  }
+  .header__contacts-number {
+    font-size: 8px;
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+  .header__contacts-btn input {
+    font-size: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 15px;
   }
 }

@@ -14,7 +14,7 @@ module.exports = {
         outputPath: path.join(__dirname, 'build')
     },
     entry: {
-        sales_generator_lp: path.resolve(root, 'happy.witch.lp.jsx'),
+        happy_witch_lp: path.resolve(root, 'happy.witch.lp.jsx'),
         style: path.resolve(root, 'assets/sass/style.scss')
     },
     output:{
@@ -49,6 +49,10 @@ module.exports = {
             {
                 test: /\.(css)$/,
                 loader: 'file-loader?name=common/[name].[ext]'
+            },
+            {
+                test: /\.(php)$/,
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },
@@ -60,7 +64,9 @@ module.exports = {
         new ExtractTextPlugin({ filename: './[name].css', disable: false, allChunks: true }),
         new CopyWebpackPlugin([
             { from: 'assets/images', to: './images/' },
-            { from: 'assets/common', to: './common'}
+            { from: 'assets/common', to: './common'},
+            {from: 'phpmailer', to: './phpmailer'},
+            { from: './send_mail.php', to: './send_mail.php'}
         ]),
         new JavaScriptObfuscator ({
             rotateUnicodeArray: true

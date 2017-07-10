@@ -1,7 +1,18 @@
 import React from 'react';
+import {showModal, recomendationsShow} from '../../../actions/index';
+import { bindActionCreators } from 'redux'
+import {connect} from 'react-redux';
 
-const SuccessKey = () => {
+class SuccessKey extends React.Component{
+    openModalHandler() {
+        this.props.showModal(true);
+        this.props.recomendationsShow(true);
+        return true;
+    }
+
+    render() {
     return (
+
         <section className="container-key">
             <div className="container-key__opacity">
                 <div>
@@ -99,13 +110,24 @@ const SuccessKey = () => {
                     </div>
                 </div>
                 <div className="key-item__btn-wrap">
-                    <button className="key-item__btn">
+                    <button className="key-item__btn" onClick={this.openModalHandler.bind(this)}>
                         <span>Скачать пример рекомендации</span>
                     </button>
                 </div>
             </div>
         </section>  
     );
+    }
 };
 
-export default SuccessKey;
+const mapStateToProps = (store) => {
+    return {
+        formState: store.hwReducer
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({showModal, recomendationsShow}, dispatch);
+};
+
+export default  connect(mapStateToProps, mapDispatchToProps)(SuccessKey);

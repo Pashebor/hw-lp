@@ -1,0 +1,120 @@
+.container-scheme {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 1250px;
+}
+.container-scheme h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container-scheme p {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.scheme {
+
+}
+.scheme-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.scheme__field input[type="text"] {
+  border: 1px solid #ccc;
+  width: 224px;
+  padding: 12px 12px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.scheme__field input[type="submit"] {
+  background-color: #3e35bd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 3px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: #3e35bd;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+  cursor: pointer;
+}
+.scheme__field input[type="submit"]:hover {
+  background-color: #3830aa;
+  border-color: #322a97;
+  color: #fff;
+}
+.scheme-paragraph {
+  margin-bottom: 30px;
+}
+.scheme-paragraph__last {
+  margin-bottom: 10px;
+}
+.scheme-arrow {
+  text-align: center;
+  padding: 15px 0;
+  .arrow{
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    &::before{
+      font-family: FontAwesome;
+      content: '\f107';
+      color: black;
+      font-size: 70px;
+      font-weight: 100;
+      transition: text-shadow 0.2s ease-in-out;
+    }
+    &:hover{
+      &::before{
+        text-shadow: 0 2px 2px #3e35bd;
+      }
+    }
+  }
+}
+.scheme-arrow img:hover {
+  border:1px solid #cccccc;
+  border-radius: 5px;
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+#title-pictures {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.scheme-pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.scheme-pictures__item {
+  width: 48%;
+}
+.scheme-pictures__item img {
+  width: 545px;
+}
+.bold {
+  font-family: $headers-font-bold;
+}
+.btn-download {
+  width: 325px;
+  margin: auto;
+}

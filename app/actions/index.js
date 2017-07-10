@@ -2,37 +2,29 @@ import {requestCallback} from '../utils/ajax';
 
 /*CONSTANTS*/
 export const GET_MODAL_FORM = 'showModal';
-export const OPEN_FULL_CASE = 'openCase';
-export const OPEN_SLIDER = 'openSlider';
 export const SEND_MESSAGE_SUCCESS = 'sendRequestCallback';
 export const SEND_CLIENTS_SUCCESS = 'knowClients';
 export const NULL_CALLBACKS = 'nullCallbacks';
 export const SCROLLER_OPACITY = 'setStyles';
-export const CONTRACT_FORM = 'contractShow';
-export const WORK_PLAN_FORM = 'workPlanShow';
-export const RECOMENDATION_FORM = 'guaranteesShow';
+export const PRODUCT_COST_FROM = 'workPlanShow';
+export const RECOMENDATION_FORM = 'recomendationsShow';
 /*ACTIONS*/
 
-export const guaranteesShow = (value) => {
+export const recomendationsShow = (value) => {
     return{
         type: RECOMENDATION_FORM,
         show: value
     }
-}
+};
 
-export const workPlanShow = (value) => {
+export const productCostShow = (value, product) => {
     return{
-        type: WORK_PLAN_FORM,
-        show: value
+        type: PRODUCT_COST_FROM,
+        show: value,
+        product: product
     }
 };
 
-export const contractShow = (value) => {
-    return{
-        type: CONTRACT_FORM,
-        show: value
-    }
-};
 
 export const setStyles = (opacity, pointerEvents, cursor) => {
         return {
@@ -47,23 +39,6 @@ export const showModal = (logicValue) => {
       show: logicValue
   }
 };
-
-export const openCase = (uri, logicValue) => {
-    return {
-        type: OPEN_FULL_CASE,
-        payload: uri,
-        show: logicValue
-    }
-};
-
-export const openSlider = (uri,logicValue) => {
-   return {
-       type: OPEN_SLIDER,
-       payload: uri,
-       show: logicValue
-   }
-};
-
 
 export const nullCallbacks = (val1, val2) => {
    return{

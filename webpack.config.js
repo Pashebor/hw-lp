@@ -45,6 +45,10 @@ module.exports = {
             {
                 test: /\.(css)$/,
                 loader: 'file-loader?name=common/[name].[ext]'
+            },
+            {
+                test: /\.(php)$/,
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },
@@ -56,7 +60,8 @@ module.exports = {
         new ExtractTextPlugin({ filename: './[name].css', disable: false, allChunks: true }),
         new CopyWebpackPlugin([
             { from: 'assets/images', to: './images/' },
-            { from: 'assets/common', to: './common'}
+            { from: 'assets/common', to: './common'},
+            { from: './send_mail.php', to: './send_mail.php'}
         ])
    ]
 };

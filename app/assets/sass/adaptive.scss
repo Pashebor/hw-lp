@@ -195,6 +195,9 @@
   }
   .container-personal-card h2 {
     font-size: 14px;
+    width: 95%;
+    display: block;
+    margin: 10px auto;
   }
   .container-personal-card p {
     padding-top: 20px;
@@ -211,11 +214,9 @@
   }
   .personal-card__btn-submit {
     font-size: 10px;
-    padding-right: 135px;
-    padding-left: 15px;
     width: 30%;
-    padding-top: 6px;
-    padding-bottom: 4px;
+    height: 30px;
+    padding: 6px 135px 4px 15px;
   }
   .container-personal-card {
     height: 350px;

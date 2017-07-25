@@ -55,7 +55,7 @@ class HeaderContent extends Component{
                             </div>
                             <div className="header__contacts">
                                 <div className="header__contacts-number">
-                                    8 (800) 555-35-35
+                                    <a href="tel: 89032086498">8 903 208 64 98</a>
                                 </div>
                                 <div className="header__contacts-btn">
                                     <input type="button" value="Заказать звонок" onClick={this.openModalHandler.bind(this)}/>
@@ -78,7 +78,7 @@ class HeaderContent extends Component{
                             <input className="personal-card__input" type="text" name="name" ref="name" placeholder="Имя *"/>
                         </div>
                         <div className="personal-card__item">
-                            <MaskedInput mask={'+7(111) 111 11 11'} className="personal-card__input" type="text" ref="phone" name="phone" placeholder="Телефон *"/>
+                            <MaskedInput mask={'+7(111) 111 11 11'} className="personal-card__input" type="text" ref="phone" name="phone" placeholder="Телефон *" size={0}/>
                         </div>
                         <div className="personal-card__item">
                             <input className="personal-card__input personal-card__btn-submit" type="button" value="Получить рекомендации!" onClick={this.btnSubmitHandler.bind(this)}/>

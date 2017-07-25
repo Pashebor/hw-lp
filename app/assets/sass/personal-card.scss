@@ -51,21 +51,10 @@
 .personal-card__btn-submit {
   /*background-color: rgba(62, 53, 189, 0.85);*/
   background-color: #3e35bd;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-style: solid;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
+  border-radius: 5px;
   /*border-color: rgb(68, 40, 166);*/
-  border-color: #3e35bd;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 21px;
-  padding-right: 21px;
+  border: 0px solid #3e35bd;
+  padding: 10px 21px;
   font-size: 19px;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -111,27 +100,25 @@
   flex-direction: row;
 }
 .header__contacts-number {
-  color: #ffffff;
   font-size: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-right: 60px;
+  a{
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease-in-out;
+    &:hover{
+      text-shadow: 0 0 6px white;
+    }
+  }
 }
 .header__contacts-btn input {
   background-color: rgb(61, 53, 189);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-style: solid;
-  border-top-width: 1px;
+  border-radius: 5px;
+  border: 1px solid rgb(49, 42, 151);
   border-bottom-width: 3px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-color: rgb(49, 42, 151);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 8px 16px;
   font-size: 18px;
   color: rgb(255, 255, 255);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);

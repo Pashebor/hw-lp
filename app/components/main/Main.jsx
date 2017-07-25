@@ -4,9 +4,11 @@ import NeedsAnalysis from './need-analysis/NeedsAnalysis';
 import SuccessKey from './key-to-success/SuccessKey';
 import Worry from './worry/Worry';
 import ButtonToTop from '../ButtonToTop';
-import  Training from './astro-training/Training';
+import  Trainings from './trainings/Trainings';
 import  WorkingScheme from './working-scheme/WorkingScheme';
 import  ProductCost from './product-cost/ProductCost';
+import  Reviews from './reviews/Reviews';
+import  Facts from './facts/Facts';
 
 
 class Main extends Component{
@@ -17,8 +19,10 @@ class Main extends Component{
                <SuccessKey/>
                <Worry/>
                <ButtonToTop/>
-               <Training />
+               <Trainings />
                <WorkingScheme />
+               <Reviews/>
+               <Facts/>
                <ProductCost />
            </main>
         )

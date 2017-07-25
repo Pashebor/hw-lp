@@ -38,19 +38,16 @@ class ProductCost extends React.Component{
                                         <li>Сильные и слабые качества</li>
                                     </ul>
                                 </div>
-                                <div className="cost__trait">
-                                    4 900
-                                </div>
-                                <div className="cost__now">
-                                    1 500 руб.
+                                <div className="cost__now-all">
+                                    4 900 РУБ.
                                 </div>
                                 <div className="cost__btn">
-                                    <input type="submit" value="Оставить заявку" data-product="Натальная карта (космограмма)" onClick={this.orderFormHandler.bind(this)}/>
+                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта (космограмма)" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
                             </div>
                         </div>
                         <div className="cost__item">
-                            <div className="cost__item-wrap">
+                            <div className="cost__item-wrap-pink">
                                 <div className="cost__title">
                                     Натальная карта<br/>
                                     (более подробная)
@@ -59,18 +56,18 @@ class ProductCost extends React.Component{
                                     Более подробное, детальное изучение<br/> человека, используя время и место<br/> рождения
                                 </div>
                                 <div className="cost__line-block">
-                                    <div className="cost__line"></div>
+                                    <div className="cost__line-pink"></div>
                                 </div>
                                 <div className="cost__list">
                                     <ul>
-                                        <li>Ректификация - определение времени<br/>рождения, если оно не известно</li>
+                                        <li>Ректификация - определение времени рождения, если оно не известно</li>
                                         <li>Описание ключевых особенностей <br/>вашего характера</li>
                                         <li>Описание способностей и <br/>врожденных талантов</li>
                                         <li>Сильные и слабые качества</li>
                                         <li>Механизмы работы со слабыми<br/> качествами</li>
                                         <li>Профпригодность. Определение не<br/>
                                             только талантов человека, но и ту<br/>
-                                            область деятельности, в которой он<br/>
+                                            область деятельности, в которой он
                                             будет трудиться реально</li>
                                         <li>Определение источника дохода</li>
                                         <li>Карьера. В какой области человек<br/> будет наиболее успешен</li>
@@ -79,14 +76,14 @@ class ProductCost extends React.Component{
                                         <li>Главные задачи и цели воплощения</li>
                                     </ul>
                                 </div>
-                                <div className="cost__trait">
-                                    9 900
-                                </div>
                                 <div className="cost__now">
-                                    3 000 руб.
+                                    14 900
                                 </div>
-                                <div className="cost__btn">
-                                    <input type="submit" value="Оставить заявку" data-product="Натальная карта (более подробная)" onClick={this.orderFormHandler.bind(this)}/>
+                                <div className="cost__trait">
+                                    9 000 <span id="money">РУБ.</span>
+                                </div>
+                                <div className="cost__btn-pink">
+                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта (более подробная)" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
                             </div>
                         </div>
@@ -106,26 +103,22 @@ class ProductCost extends React.Component{
                                     <ul>
                                         <li>Подробный натальный анализ<br/>каждого из партнеров</li>
                                         <li>Потребности каждого партнера.<br/>Какой идеал?</li>
-                                        <li>Проблемы в паре. Рекомендации для<br/>их решения</li>
-                                        <li>Каким образом партнер оказывает<br/>влияние на различные сферы Вашей<br/> жизни</li>
+                                        <li>Проблемы в паре. Рекомендации для их решения</li>
+                                        <li>Каким образом партнер оказывает<br/>влияние на различные сферы Вашей жизни</li>
                                         <li>Мотивы, скрепляющие пару и<br/>разъединяющие ее. Чего опасаться?</li>
                                         <li>Периоды глубоких кризисов<br/>
                                             Рекомендации для их решения</li>
                                         <li>Измены</li>
                                         <li>Одиночество и безбрачие</li>
                                         <li>Равнодушие</li>
-                                        <li>Рекомендации, каким образом<br/>привлечь партнера, обратить на себя<br/>внимание, заставить о себе думать</li>
-                                        <li>Главные задачи и цели воплощения</li>
+                                        <li>Рекомендации, каким образом<br/>привлечь партнера, обратить на себя внимание, заставить о себе думать</li>
                                     </ul>
                                 </div>
-                                <div className="cost__trait">
-                                    19 900
-                                </div>
-                                <div className="cost__now">
-                                    4 000 руб.
+                                <div className="cost__now-all">
+                                    19 900 РУБ.
                                 </div>
                                 <div className="cost__btn">
-                                    <input type="submit" value="Оставить заявку" data-product="Совместимость (синастрия)" onClick={this.orderFormHandler.bind(this)}/>
+                                    <input type="submit" value="Проверить совместимость" data-product="Совместимость (синастрия)" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
                             </div>
                         </div>

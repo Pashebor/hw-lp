@@ -6,10 +6,18 @@
 @import "../../components/main/key-to-success/key-to-success.scss";
 @import "../../components/main/worry/worry.scss";
 @import "adaptive.scss";
-@import "../../components/main/astro-training/training";
+@import "../../components/main/trainings/training";
 @import "../../components/main/working-scheme/scheme";
 @import "../../components/main/product-cost/cost";
 @import "./modal-form";
+@import "../../components/main/reviews/reviews";
+@import "../../components/main/facts/facts";
+
+
+.container{
+  margin: 0;
+  padding: 0;
+}
 
 .top-button-block {
   position: fixed;

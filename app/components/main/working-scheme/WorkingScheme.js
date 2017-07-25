@@ -87,20 +87,22 @@ class WorkingScheme extends React.Component{
                 </div>
 
                 <div className="scheme-arrow">
-                    <a className="arrow" href="#recommendations"></a>
+                    <a className="arrow" href="#rec"></a>
                 </div>
-                <ScrollableAnchor id={'recommendations'}>
+                <ScrollableAnchor id={'rec'}>
                 <p className="scheme-paragraph scheme-paragraph__last">
                     <span className="bold">3.</span> Вы получаете подробные рекомендации в интересующих Вас сферах жизни, исходя из<br/>
                     выбранного Вами продукта
                 </p>
                 </ScrollableAnchor>
+
                 <div className="key-item__btn-wrap">
                     <br/>
                     <button className="key-item__btn" onClick={this.openModalHandler.bind(this)}>
                         <span>Скачать пример рекомендации</span>
                     </button>
                 </div>
+            
             </section>
         )
     }

@@ -7,6 +7,7 @@ import MaskedInput from 'react-maskedinput';
 class HeaderContent extends Component{
     openModalHandler() {
         this.props.showModal(true);
+        yaCounter45420078.reachGoal('REQUEST_A_CALL');
     }
     btnSubmitHandler(e) {
         e.preventDefault();
@@ -14,6 +15,7 @@ class HeaderContent extends Component{
         formData.name = this.refs.name.value;
         formData.phone = this.refs.phone.mask.getValue();
         this.props.sendClientsCallback(formData);
+        yaCounter45420078.reachGoal('GET_RECOMMENDATIONS');
         return true;
     }
 

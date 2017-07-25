@@ -56,16 +56,23 @@
   margin-top: 0;
 }
 .cost__trait {
-  color: rgb(98, 98, 98);
+  color: rgb(231, 65, 126);
   font-size: 32px;
   padding-bottom: 20px;
   font-family: $headers-font-bold;
 }
 .cost__now {
+  position: relative;
   text-transform: uppercase;
   font-family: $headers-font-bold;
   font-size: 26px;
-  text-decoration:line-through;
+  &::before{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    width: 85px;
+    border-top: 3px solid #333;
+  }
 }
 .cost__now-all {
   text-transform: uppercase;
@@ -95,9 +102,9 @@
   float: left;
 }
 .cost__btn-pink input {
-  background-color: rgb(237, 113, 158);
+  background-color: rgb(247, 58, 125);
   border-radius: 5px;
-  border: 1px solid rgb(237, 113, 158);
+  border: 1px solid rgb(247, 58, 125);
   border-bottom-width: 3px;
   padding: 8px 16px;
   font-size: 18px;
@@ -106,8 +113,8 @@
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 .cost__btn-pink input:hover {
-  background-color: rgb(233, 82, 137);
-  border-color: rgb(229, 51, 116);
+  background-color: rgb(246, 29, 106);
+  border-color: rgb(234, 10, 89);
   color: rgb(255, 255, 255);
 }
 .cost__item-wrap-pink {

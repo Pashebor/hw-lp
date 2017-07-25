@@ -19,7 +19,7 @@
   margin-bottom: 24px;
 }
 .facts__wrap {
-  width: 60%;
+  width: 1200px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -48,6 +48,10 @@
   color: rgb(188, 140, 191);
 }
 
-
+@media screen and (max-width: 1200px) {
+  .facts__wrap{
+    width: 100%;
+  }
+}
 
 

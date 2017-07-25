@@ -11,7 +11,7 @@ class WorkingScheme extends React.Component{
     openModalHandler() {
         this.props.showModal(true);
         this.props.recomendationsShow(true);
-        return true;
+        yaCounter45420078.reachGoal('DOWNLOAD_A_SAMPLE2');
     }
 
     btnSubmitHandler(e) {
@@ -21,7 +21,7 @@ class WorkingScheme extends React.Component{
             formData[field] = this.refs[field].mask.getValue();
         }
         this.props.sendClientsCallback(formData);
-        return true;
+        yaCounter45420078.reachGoal('LEAVE_REQUEST');
     }
 
     clientsNotification() {

@@ -7,6 +7,17 @@ class ProductCost extends React.Component{
     orderFormHandler(event) {
         this.props.showModal(true);
         this.props.productCostShow(true, event.target.getAttribute('data-product'));
+        switch (event.target.getAttribute('data-product')){
+            case 'Натальная карта':
+                yaCounter45420078.reachGoal('1_RATE');
+                break;
+            case 'Натальная карта (расширенная)':
+                yaCounter45420078.reachGoal('2_RATE');
+                break;
+            case 'Совместимость (синастрия)':
+                yaCounter45420078.reachGoal('3_RATE');
+                break;
+        }
     }
     render() {
         console.log(this);
@@ -22,8 +33,8 @@ class ProductCost extends React.Component{
                         <div className="cost__item">
                             <div className="cost__item-wrap">
                                 <div className="cost__title">
-                                    Натальная карта<br/>
-                                    (космограмма)
+                                    Натальная карта
+                                    <br/>
                                 </div>
                                 <div className="cost__text">
                                     Личный гороскоп, который описывает<br/>потенциал, важные сферы и ключевые<br/>события жизни
@@ -42,7 +53,7 @@ class ProductCost extends React.Component{
                                     4 900 РУБ.
                                 </div>
                                 <div className="cost__btn">
-                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта (космограмма)" onClick={this.orderFormHandler.bind(this)}/>
+                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +61,7 @@ class ProductCost extends React.Component{
                             <div className="cost__item-wrap-pink">
                                 <div className="cost__title">
                                     Натальная карта<br/>
-                                    (более подробная)
+                                    (расширенная)
                                 </div>
                                 <div className="cost__text">
                                     Более подробное, детальное изучение<br/> человека, используя время и место<br/> рождения
@@ -83,7 +94,7 @@ class ProductCost extends React.Component{
                                     9 000 <span id="money">РУБ.</span>
                                 </div>
                                 <div className="cost__btn-pink">
-                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта (более подробная)" onClick={this.orderFormHandler.bind(this)}/>
+                                    <input type="submit" value="Заказать натальную карту" data-product="Натальная карта (расширенная)" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
                             </div>
                         </div>

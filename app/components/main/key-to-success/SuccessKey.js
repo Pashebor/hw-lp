@@ -7,7 +7,7 @@ class SuccessKey extends React.Component{
     openModalHandler() {
         this.props.showModal(true);
         this.props.recomendationsShow(true);
-        return true;
+        yaCounter45420078.reachGoal('DOWNLOAD_A_SAMPLE');
     }
 
     render() {

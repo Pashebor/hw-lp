@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux';
 class Trainings extends React.Component{
     openModalHandler() {
         this.props.showModal(true);
+        yaCounter45420078.reachGoal('CONSULTATION_ASTROLOGER');
     }
     render() {
         return(
@@ -40,7 +41,7 @@ class Trainings extends React.Component{
                                 </div>
                                 <div className="consultation__text">
                                     <div className="container__text-description">
-                                        Стаж практических занятий астрологией более 6 лет. За это время построила и разобрала более 230 гороскопов, провела около 312 консультаций,онлайн и очно. Имеет десятки отзывов от многочисленных благодарных клиентов, жизнь многих из них после консультации резко поменялась в благоприятном
+                                        Стаж практических занятий астрологией более 6 лет. За это время построила и разобрала более 230 гороскопов, провела 312 консультаций,онлайн и очно. Имеет десятки отзывов от многочисленных благодарных клиентов, жизнь многих из них после консультации резко поменялась в благоприятном
                                         направлении.
                                     </div>
                                     <ul>

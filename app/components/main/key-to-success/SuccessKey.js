@@ -2,6 +2,7 @@ import React from 'react';
 import {showModal, recomendationsShow} from '../../../actions/index';
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class SuccessKey extends React.Component{
     openModalHandler() {
@@ -17,7 +18,7 @@ class SuccessKey extends React.Component{
             <div className="container-key__opacity">
                 <div>
                     <h2>
-                        Вы получите ключ к успеху в таких сферах как:
+                        Вы получите ключ к успеху в таких сферах как
                     </h2>
                 </div>
                 <div className="wrap__key-item">
@@ -110,9 +111,11 @@ class SuccessKey extends React.Component{
                     </div>
                 </div>
                 <div className="key-item__btn-wrap">
+                   <ScrollableAnchor id={'use-card'}>
                     <button className="key-item__btn" onClick={this.openModalHandler.bind(this)}>
                         <span>Скачать пример рекомендации</span>
                     </button>
+                   </ScrollableAnchor>
                 </div>
             </div>
         </section>  

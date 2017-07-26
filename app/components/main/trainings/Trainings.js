@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {showModal} from '../../../actions/index';
 import { bindActionCreators } from 'redux';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class Trainings extends React.Component{
     openModalHandler() {
@@ -12,11 +13,13 @@ class Trainings extends React.Component{
         return(
             <section className="container-training">
                 <div className="container-training__background">
+
                     <div>
                         <h2>
-                            Наши астрологи проходят обучение в лучших школах, таких как:
+                            Наши астрологи проходят обучение в лучших школах, таких как
                         </h2>
                     </div>
+
                     <div className="training-list">
                         <div className="training-list__wrap">
                             <p>
@@ -40,10 +43,12 @@ class Trainings extends React.Component{
                                     <img src="images/cons1.jpg" alt="Жанна Усачёва" title="Жанна Усачёва"/>
                                 </div>
                                 <div className="consultation__text">
+                                    <ScrollableAnchor id={'astrologers'}>
                                     <div className="container__text-description">
                                         Стаж практических занятий астрологией более 6 лет. За это время построила и разобрала более 230 гороскопов, провела 312 консультаций,онлайн и очно. Имеет десятки отзывов от многочисленных благодарных клиентов, жизнь многих из них после консультации резко поменялась в благоприятном
                                         направлении.
                                     </div>
+                                    </ScrollableAnchor>
                                     <ul>
                                         <li>
                                             Составление индивидуального гороскопа

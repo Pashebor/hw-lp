@@ -5,7 +5,7 @@ const Reviews = () => {
         <section className="container-reviews">
             <div className="container-reviews__background">
                 <h2>
-                    ОТЗЫВЫ ЛЮДЕЙ, ПОЛУЧИВШИХ НАШИ РЕКОМЕНДАЦИИ:
+                    ОТЗЫВЫ ЛЮДЕЙ, ПОЛУЧИВШИХ НАШИ РЕКОМЕНДАЦИИ
                 </h2>
             </div>
             <div className="reviews-images__wrap">
@@ -15,6 +15,7 @@ const Reviews = () => {
                 <div className="reviews-images">
                     <img src="images/review2.jpg" alt="Отзыв Алены" title="Отзыв Алены"/>
                 </div>
+
                 <div className="reviews-images">
                     <img src="images/review3.jpg" alt="Отзыв девушки" title="Отзыв девушки"/>
                 </div>

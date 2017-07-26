@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const NeedsAnalysis = () => {
     return(
@@ -30,9 +31,11 @@ const NeedsAnalysis = () => {
                     </div>
                     <div className="analysis-item">
                         <img src="images/lamp.svg"/>
+                        <ScrollableAnchor id={'key-to-success'}>
                             <p>
                                 Хотите узнать свои сильные и слабые качества
                             </p>
+                        </ScrollableAnchor>
                     </div>
                 </div>
             </div>

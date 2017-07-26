@@ -46,10 +46,11 @@ class WorkingScheme extends React.Component{
 
     render() {
         return(
+
             <section className="container-scheme">
                 <div>
                     <h2>
-                        Схема работы с нами:
+                        Схема работы с нами
                     </h2>
                 </div>
                 <p className="scheme-paragraph">
@@ -70,9 +71,11 @@ class WorkingScheme extends React.Component{
                     <a className="arrow" href="#professionals"></a>
                 </div>
                 <ScrollableAnchor id={'professionals'}>
-                <p className="scheme-paragraph">
-                    <span className="bold">2.</span> Наши профессиональные астрологи составляют персональную натальную карту на основе<br/> полученных от Вас данных
-                </p>
+                    <ScrollableAnchor id={'work-scheme'}>
+                        <p className="scheme-paragraph">
+                            <span className="bold">2.</span> Наши профессиональные астрологи составляют персональную натальную карту на основе<br/> полученных от Вас данных
+                        </p>
+                    </ScrollableAnchor>
                 </ScrollableAnchor>
                 <p id="title-pictures">
                     Примеры составленных натальных карт:

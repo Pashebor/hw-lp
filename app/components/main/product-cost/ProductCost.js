@@ -2,6 +2,7 @@ import React from 'react';
 import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import {showModal, productCostShow} from '../../../actions/index';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class ProductCost extends React.Component{
     orderFormHandler(event) {
@@ -43,11 +44,13 @@ class ProductCost extends React.Component{
                                     <div className="cost__line"></div>
                                 </div>
                                 <div className="cost__list">
+                                    <ScrollableAnchor id={'facts'}>
                                     <ul>
                                         <li>Описание ключевых особенностей<br/>вашего характера</li>
                                         <li>Описание способностей и<br/>врожденных талантов</li>
                                         <li>Сильные и слабые качества</li>
                                     </ul>
+                                    </ScrollableAnchor>
                                 </div>
                                 <div className="cost__now-all">
                                     4 900 РУБ.
@@ -128,9 +131,11 @@ class ProductCost extends React.Component{
                                 <div className="cost__now-all">
                                     19 900 РУБ.
                                 </div>
+                                <ScrollableAnchor id={'product-cost'}>
                                 <div className="cost__btn">
                                     <input type="submit" value="Проверить совместимость" data-product="Совместимость (синастрия)" onClick={this.orderFormHandler.bind(this)}/>
                                 </div>
+                                </ScrollableAnchor>
                             </div>
                         </div>
                     </div>

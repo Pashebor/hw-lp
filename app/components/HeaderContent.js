@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {sendClientsCallback, showModal} from '../actions/index';
 import { bindActionCreators } from 'redux';
 import MaskedInput from 'react-maskedinput';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class HeaderContent extends Component{
     openModalHandler() {
@@ -80,9 +81,11 @@ class HeaderContent extends Component{
                         <div className="personal-card__item">
                             <MaskedInput mask={'+7(111) 111 11 11'} className="personal-card__input" type="text" ref="phone" name="phone" placeholder="Телефон *" size={0}/>
                         </div>
+                        <ScrollableAnchor id={'needs-analysis'}>
                         <div className="personal-card__item">
                             <input className="personal-card__input personal-card__btn-submit" type="button" value="Получить рекомендации!" onClick={this.btnSubmitHandler.bind(this)}/>
                         </div>
+                        </ScrollableAnchor>
                     </form>
                 </div>
             </section>

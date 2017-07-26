@@ -1,6 +1,6 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import {constant, linear, quadratic, animateValue} from '../../../utils/digit.animate';
-
 
 class Facts extends React.Component{
     constructor(props) {
@@ -26,7 +26,7 @@ class Facts extends React.Component{
                 <div className="container-facts__background">
                     <div>
                         <h2>
-                            Несколько фактов о нас:
+                            Несколько фактов о нас
                         </h2>
                     </div>
                     <div className="facts__wrap">
@@ -34,7 +34,9 @@ class Facts extends React.Component{
                             <div className="facts__item">
                                 <div>
                                     <span className="facts__text-min">Более</span>
-                                    <span className="facts__text-max" id="exp">7</span>
+                                    <ScrollableAnchor id={'people-feedback'}>
+                                        <span className="facts__text-max" id="exp">7</span>
+                                    </ScrollableAnchor>
                                 </div>
                                 <div className="facts__text">
                                     Лет практического опыта в<br/> астрологии

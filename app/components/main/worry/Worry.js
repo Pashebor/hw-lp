@@ -6,7 +6,7 @@ class Worry extends Component{
             <section className="container-worry">
                 <div>
                     <h2>
-                        Воспользуйтесь картой,если вас тревожит хотя бы один из этих пунктов:
+                        Воспользуйтесь картой,если вас тревожит хотя бы один из этих пунктов
                     </h2>
                 </div>
                 <div className="wrap-worry">

@@ -12,6 +12,7 @@ $mail->CharSet = 'UTF-8';
 $mail->From = 'info.repeople@mail.ru';
 $mail->FromName = 'REPEOPLE';
 $mail->addAddress('Viprepeople@mail.ru', 'REPEOPLE');
+$mail->addAddress('pashebor@gmail.com', 'REPEOPLE');
 $mail->isHtml(true);
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idToDel = $_POST["formData"];

@@ -183,6 +183,16 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
+  .form__notification{
+    font-size: 15px;
+  }
+  .container-personal-card__opacity{
+    height: auto;
+  }
+  .popup-overlay .popup-form{
+    top: 10%;
+    width: 90%;
+  }
   .key-item {
     width: 100%;
     margin: 0 20px 10px 20px;
@@ -208,6 +218,11 @@
   p {
     font-size: 12px;
   }
+  .personal-card{
+    &__item:nth-child(3) {
+      margin-bottom: 20px;
+    }
+  }
   .personal-card__input {
     width: 80%;
     padding: 3px 3px;
@@ -219,7 +234,7 @@
     padding: 6px 135px 4px 15px;
   }
   .container-personal-card {
-    height: 350px;
+    height: auto;
   }
   .key-item__container p {
     font-size: 12px;

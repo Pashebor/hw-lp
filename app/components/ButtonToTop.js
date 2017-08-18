@@ -8,7 +8,6 @@ class ButtonToTop extends React.Component{
         window.onscroll = () => {
             if (window.pageYOffset >= 1200) {
                 this.props.setStyles('0.8', 'auto', 'pointer');
-                console.log(this.props.styles);
             } else {
                 this.props.setStyles('0', 'none', 'default');
             }
@@ -27,7 +26,6 @@ class ButtonToTop extends React.Component{
         }, 30);
     }
     render() {
-        console.log(this.props.formState);
         return(
             <aside className="top-button-block" style={{opacity: this.props.styles.opacity, pointerEvents: this.props.styles.pointerEvents, cursor: this.props.styles.cursor}}>
                 <div className="top-button" ref="btn" onClick={this.scrollToTopHandler.bind(this)}></div>

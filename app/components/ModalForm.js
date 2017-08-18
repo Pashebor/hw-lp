@@ -8,7 +8,7 @@ class ModalForm extends Component{
     personalAgreement() {
         return (
             <div className="personal-data">
-                <input type="checkbox" className="form-control" required/><p>Согласен на обработку <a href="https://sales-generator.ru/Politika-konfidencialnosti.pdf">персональных данных</a></p>
+                <input type="checkbox" className="form-control" required defaultChecked={true}/><p>Согласен на обработку <a href="https://sales-generator.ru/Politika-konfidencialnosti.pdf">персональных данных</a></p>
             </div>
         );
     }
@@ -54,19 +54,22 @@ class ModalForm extends Component{
         if (this.props.formState.recomendations) {
             formData['form-name'] = 'recomendations-example';
             formData.email = this.refs.email.value;
-            formData.phone = this.refs.phone.mask.getValue();
-            this.props.sendCallback(formData);
+            formData.phone = this.refs.phone.value;
+            /*this.props.sendCallback(formData);*/
+            console.log(formData);
         } else if (this.props.formState.productCost) {
             formData['form-name'] = 'product-order';
             formData.product = this.props.formState.product;
             formData.email = this.refs.email.value;
-            formData.phone = this.refs.phone.mask.getValue();
-            this.props.sendCallback(formData);
+            formData.phone = this.refs.phone.value;
+            /*this.props.sendCallback(formData);*/
+            console.log(formData);
         } else {
             for (let field in this.refs) {
-                formData[field] = this.refs[field].mask.getValue();
+                formData[field] = this.refs[field].value;
             }
-            this.props.sendCallback(formData);
+            console.log(formData);
+            /*this.props.sendCallback(formData);*/
         }
     }
 
@@ -75,13 +78,13 @@ class ModalForm extends Component{
 
         if (this.props.formState.productCost) {
             this.refs.email.value = '';
-            this.refs.phone.mask.setValue('');
+            this.refs.phone.value = '';
         } else if(this.props.formState.recomendations) {
             this.refs.email.value = '';
-            this.refs.phone.mask.setValue('');
+            this.refs.phone.value = '';
         } else {
             for (let fieldClear in this.refs) {
-                this.refs[fieldClear].mask.setValue('');
+                this.refs[fieldClear].value = '';
             }
         }
         this.props.showModal(false);
@@ -105,7 +108,7 @@ class ModalForm extends Component{
                         <label>Ваш Email <span>*</span></label>
                         <input type="text" ref="email" name="email" className="form-control" required="true" placeholder="example@mail.ru"/>
                         <label>Телефон <span>*</span></label>
-                        <MaskedInput  mask="+7(111) 111 11 11" type="text" ref="phone" name="phone" required="true" className="form-control"/>
+                        <input placeholder="Телефон *" type="text" ref="phone" name="phone" required="true" className="form-control"/>
                         {this.personalAgreement()}
                         <input type="submit" value='Отправить заявку' className="key-item__btn"/>
                     </form>
@@ -121,7 +124,7 @@ class ModalForm extends Component{
                         <label>Ваш Email <span>*</span></label>
                         <input type="text" ref="email" name="email" className="form-control" required="true" placeholder="example@mail.ru"/>
                         <label>Телефон <span>*</span></label>
-                        <MaskedInput  mask="+7(111) 111 11 11" type="text" ref="phone" name="phone" required="true" className="form-control"/>
+                        <input placeholder="Телефон *" type="text" ref="phone" name="phone" required="true" className="form-control"/>
                         {this.personalAgreement()}
                         <input type="submit" value='Отправить заявку' className="key-item__btn"/>
                     </form>
@@ -136,9 +139,9 @@ class ModalForm extends Component{
                     {this.mailNotification()}
                     <form className="form-group" onClick={this.formClickHandler.bind(this)} onSubmit={this.btnSubmitHandler.bind(this)}>
                         <label>Во сколько Вам позвонить?</label>
-                        <MaskedInput  mask="11:11"type="text" ref="callback" name="callback" className="form-control"/>
+                        <input  placeholder="__:__"  type="text" ref="callback" name="callback" className="form-control" required={true}/>
                         <label>Телефон <span>*</span></label>
-                        <MaskedInput  mask="+7(111) 111 11 11" type="text" ref="phone" name="phone" required="true" className="form-control"/>
+                        <input placeholder="Телефон *" type="text" ref="phone" name="phone" required={true} className="form-control"/>
                         {this.personalAgreement()}
                         <input type="submit" value='Отправить заявку' className="key-item__btn"/>
                     </form>

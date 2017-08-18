@@ -3,7 +3,6 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import {showModal, recomendationsShow, sendClientsCallback} from '../../../actions/index';
-import MaskedInput from 'react-maskedinput';
 
 
 class WorkingScheme extends React.Component{
@@ -18,7 +17,7 @@ class WorkingScheme extends React.Component{
         e.preventDefault();
         let formData = {'form-name': 'schema'};
         for (let field in this.refs) {
-            formData[field] = this.refs[field].mask.getValue();
+            formData[field] = this.refs[field].value;
         }
         this.props.sendClientsCallback(formData);
         yaCounter45420078.reachGoal('LEAVE_REQUEST');
@@ -29,7 +28,7 @@ class WorkingScheme extends React.Component{
         let notification = (resp) => {
             switch (resp.response) {
                 case true:
-                    return <h5 className="form__notification">Ваша заявка принята, с Вами свяжется наш менеджер</h5>;
+                    return <h5 className="form__notification">Ваша заявка принята, с Вами свяжется наш астролог</h5>;
                     break;
                 case false:
                     return <h5 className="form__notification know-form__notification--error">Произошла ошибка отправки письма</h5>;
@@ -58,12 +57,12 @@ class WorkingScheme extends React.Component{
                 </p>
                 <div className="scheme">
                     {this.clientsNotification()}
-                    <form className="scheme-form">
+                    <form className="scheme-form" onSubmit={this.btnSubmitHandler.bind(this)}>
                         <div className="scheme__field">
-                            <MaskedInput mask={'+7(111) 111 11 11'} type="text" ref="phone" name="phone" placeholder="Телефон *"/>
+                            <input type="text" ref="phone" name="phone" placeholder="Телефон *" required={true}/>
                         </div>
                         <div className="scheme__field">
-                            <input type="submit" value="Оставить заявку" onClick={this.btnSubmitHandler.bind(this)}/>
+                            <input type="submit" value="Оставить заявку" />
                         </div>
                     </form>
                 </div>

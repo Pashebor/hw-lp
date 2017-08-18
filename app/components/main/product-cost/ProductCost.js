@@ -21,7 +21,6 @@ class ProductCost extends React.Component{
         }
     }
     render() {
-        console.log(this);
         return(
             <section className="container-cost">
                 <div className="container-cost__opacity">
